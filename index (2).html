@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Федеральная территория "Сириус"</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #1e90ff;
+            color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: #1e90ff;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 5px;
+        }
+
+        .main-image {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .info-block {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .highlight {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-left: 4px solid #1e90ff;
+            margin: 15px 0;
+        }
+
+        ul.features {
+            columns: 2;
+            list-style-type: none;
+            padding: 0;
+        }
+
+            ul.features li {
+                padding: 8px 0;
+                padding-left: 25px;
+                position: relative;
+            }
+
+                ul.features li:before {
+                    content: "✓";
+                    color: #1e90ff;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                }
+
+        .quiz-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .options label {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f5faff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+            .options label:hover {
+                background-color: #e6f2ff;
+            }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+            display: block;
+            margin: 20px auto;
+        }
+
+            button:hover {
+                background-color: #187bcd;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+        #result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .correct-answer {
+            color: #1e90ff;
+            font-weight: bold;
+            margin-top: 5px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            ul.features {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Федеральная территория "Сириус"</h1>
+        <p>Центр науки, образования и инноваций России</p>
+    </header>
+
+    <img src="https://sochisirius.ru/uploads/2023/04/sirius-park-1.jpg" alt="Панорама Сириуса" class="main-image">
+
+    <div class="info-block">
+        <h2>О территории</h2>
+        <p>Федеральная территория "Сириус" была образована 22 декабря 2020 года по инициативе Президента Российской Федерации. Это первый и пока единственный в России регион со статусом федеральной территории.</p>
+
+        <div class="highlight">
+            <p>Территория расположена на черноморском побережье в Краснодарском крае и включает в себя:</p>
+            <ul>
+                <li>Часть территории города Сочи (Имеретинская низменность)</li>
+                <li>Олимпийские объекты 2014 года</li>
+                <li>Образовательный центр "Сириус"</li>
+                <li>Научно-технологический университет</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-block">
+        <h2>Основные объекты</h2>
+
+        <h3>Образовательный центр "Сириус"</h3>
+        <p>Создан в 2015 году на базе олимпийской инфраструктуры по инициативе Президента РФ. Ежемесячно принимает 800 детей в возрасте 10-17 лет, которые проходят обучение по программам:</p>
+        <ul class="features">
+            <li>Наука (математика, физика, химия, биология)</li>
+            <li>Искусство (классическая музыка, живопись, хореография)</li>
+            <li>Спорт (фигурное катание, хоккей, шахматы)</li>
+            <li>Литературное творчество</li>
+            <li>Программирование и кибербезопасность</li>
+        </ul>
+
+        <h3>Научно-технологический университет "Сириус"</h3>
+        <p>Основан в 2019 году как университет, интегрированный с образовательным центром. Основные направления:</p>
+        <ul>
+            <li>Генетика и науки о жизни</li>
+            <li>Искусственный интеллект и информационные технологии</li>
+            <li>Когнитивные исследования</li>
+            <li>Нанотехнологии</li>
+        </ul>
+    </div>
+
+    <div class="info-block">
+        <h2>Экономика и развитие</h2>
+        <p>"Сириус" позиционируется как территория инновационного развития. Здесь создаются особые условия для:</p>
+        <ul>
+            <li>Научных исследований и разработок</li>
+            <li>Технологического предпринимательства</li>
+            <li>Международного сотрудничества</li>
+            <li>Образовательных проектов</li>
+        </ul>
+        <p>На территории действует особый налоговый режим и упрощенные административные процедуры для резидентов.</p>
+    </div>
+
+    <div class="quiz-container">
+        <h2>Проверьте свои знания о "Сириусе"</h2>
+
+        <div class="question">
+            <p>1. В каком году была образована федеральная территория "Сириус"?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="2018"> 2018</label>
+                <label><input type="radio" name="q1" value="2020"> 2020</label>
+                <label><input type="radio" name="q1" value="2022"> 2022</label>
+            </div>
+            <div class="correct-answer" id="a1">Правильный ответ: 2020</div>
+        </div>
+
+        <div class="question">
+            <p>2. На базе каких объектов был создан "Сириус"?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="Универсиады"> Объектов Универсиады</label>
+                <label><input type="radio" name="q2" value="Олимпиады"> Объектов Олимпиады 2014</label>
+                <label><input type="radio" name="q2" value="Экспо"> Объектов Экспо</label>
+            </div>
+            <div class="correct-answer" id="a2">Правильный ответ: Объектов Олимпиады 2014</div>
+        </div>
+
+        <div class="question">
+            <p>3. Какое основное направление НТУ "Сириус"?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="Гуманитарное"> Гуманитарные науки</label>
+                <label><input type="radio" name="q3" value="Техническое"> Технические науки</label>
+                <label><input type="radio" name="q3" value="Медицинское"> Медицинские науки</label>
+            </div>
+            <div class="correct-answer" id="a3">Правильный ответ: Технические науки</div>
+        </div>
+
+        <div class="question">
+            <p>4. Сколько детей ежемесячно обучается в центре "Сириус"?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="300"> 300</label>
+                <label><input type="radio" name="q4" value="500"> 500</label>
+                <label><input type="radio" name="q4" value="800"> 800</label>
+            </div>
+            <div class="correct-answer" id="a4">Правильный ответ: 800</div>
+        </div>
+
+        <div class="question">
+            <p>5. Какое преимущество имеют резиденты "Сириуса"?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="Налоги"> Особый налоговый режим</label>
+                <label><input type="radio" name="q5" value="Виза"> Упрощенный визовый режим</label>
+                <label><input type="radio" name="q5" value="Оба"> Оба варианта</label>
+            </div>
+            <div class="correct-answer" id="a5">Правильный ответ: Особый налоговый режим</div>
+        </div>
+
+        <button onclick="checkAnswers()">Проверить ответы</button>
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p>© 2023 Федеральная территория "Сириус" | Официальный информационный ресурс</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "2020",
+                q2: "Олимпиады",
+                q3: "Техническое",
+                q4: "800",
+                q5: "Налоги"
+            };
+
+            let score = 0;
+            let answered = 0;
+
+            // Проверка каждого вопроса
+            for (let i = 1; i <= 5; i++) {
+                const questionName = "q" + i;
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+                const answerElement = document.getElementById("a" + i);
+
+                if (selectedOption) {
+                    answered++;
+                    if (selectedOption.value === correctAnswers[questionName]) {
+                        score++;
+                        answerElement.style.color = "#1e90ff";
+                    } else {
+                        answerElement.style.color = "#ff6b6b";
+                    }
+                    answerElement.style.display = "block";
+                }
+            }
+
+            // Вывод результата
+            const resultElement = document.getElementById("result");
+            if (answered < 5) {
+                resultElement.textContent = `Вы ответили только на ${answered} из 5 вопросов. Пожалуйста, ответьте на все вопросы для получения полного результата.`;
+            } else {
+                resultElement.textContent = `Вы ответили правильно на ${score} из 5 вопросов! ${score >= 4 ? 'Отличный результат!' : score >= 2 ? 'Неплохо, но можно лучше!' : 'Попробуйте изучить материалы еще раз!'}`;
+            }
+            resultElement.style.display = "block";
+            resultElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html> 
